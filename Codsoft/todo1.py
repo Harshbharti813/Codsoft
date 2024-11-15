@@ -41,15 +41,15 @@ def openTaskFile():
         file.close()
 
 #icon
-Image_icon=PhotoImage(file="Image/task.png")
+Image_icon=PhotoImage(file=r"C:\Users\Lenovo\Desktop\Image/task.png")
 root.iconphoto(False,Image_icon)
 
 #top bar
-TopImage=PhotoImage(file="Image/topbar.png")
+TopImage=PhotoImage(file=r"C:\Users\Lenovo\Desktop\Image/topbar.png")
 Label(root,image=TopImage).pack()
-dockImage=PhotoImage(file="Image/dock.png")
+dockImage=PhotoImage(file=r"C:\Users\Lenovo\Desktop\Image/dock.png")
 Label(root,image=dockImage,bg="#32405b").place(x=30,y=25)
-noteImage=PhotoImage(file="Image/task.png")
+noteImage=PhotoImage(file=r"C:\Users\Lenovo\Desktop\Image/task.png")
 Label(root,image=noteImage,bg="#32405b").place(x=340,y=25)
 heading=Label(root,text="ALL TASK",font="arial 20 bold",fg="white",bg="#32405b")
 heading.place(x=130,y=20)
@@ -78,7 +78,7 @@ scrollbar.config(command=listbox.yview)
 
 openTaskFile()
 #delete
-Delete_icon=PhotoImage(file="Image/delete.png")
+Delete_icon=PhotoImage(file=r"C:\Users\Lenovo\Desktop\Image/delete.png")
 Button(root,image=Delete_icon,bd=0,command=deleteTask).pack(side=BOTTOM,pady=13)
 
 root.mainloop()
